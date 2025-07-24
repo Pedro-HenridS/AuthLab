@@ -1,4 +1,6 @@
+using AuthLab.Domain.Interfaces.Users;
 using AuthLab.Infra;
+using AuthLab.Infra.Data.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,7 +16,8 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(
         builder.Configuration.GetConnectionString("DefaultConnection"),
         ServerVersion.AutoDetect(builder.Configuration.GetConnectionString("DefaultConnection"))));
-    
+
+builder.Services.AddScoped<IUserRegisterRepository, UserRegisterRepository>();    
 
 var app = builder.Build();
 
