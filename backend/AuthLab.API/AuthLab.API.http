@@ -1,0 +1,6 @@
+@AuthLab.API_HostAddress = http://localhost:5238
+
+GET {{AuthLab.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
