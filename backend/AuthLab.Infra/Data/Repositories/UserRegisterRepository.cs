@@ -1,6 +1,6 @@
 ﻿using AuthLab.Domain.Interfaces.Users;
 using AuthLab.Domain.Repositories;
-using Microsoft.AspNetCore.Mvc;
+
 
 namespace AuthLab.Infra.Data.Repositories
 {
@@ -16,7 +16,7 @@ namespace AuthLab.Infra.Data.Repositories
         public async Task CreateAsync(User user) 
         {
             await _context.Users.AddAsync(user);
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync(true);
 
         }
     }

@@ -2,7 +2,9 @@
 
 namespace AuthLab.Domain.Interfaces.Users
 {
-    public class IPasswordHashService
+    public interface IPasswordHashService
     {
+        string PasswordHasher(string password);
+
     }
 }

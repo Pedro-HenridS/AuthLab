@@ -5,6 +5,6 @@ namespace AuthLab.Domain.Interfaces.Users
 {
     public interface IUserFindByEmailRepository
     {
-        public Task FindByEmail(string email);
+        public Task<bool> FindByEmail(string email);
     }
 }

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace AuthLab.Infra.Migrations
 {
     /// <inheritdoc />
-    public partial class Primeiramigration : Migration
+    public partial class refazendoatabela : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

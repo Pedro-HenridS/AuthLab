@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AuthLab.Infra.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250724165520_Primeira migration")]
-    partial class Primeiramigration
+    [Migration("20250725003038_refazendo a tabela")]
+    partial class refazendoatabela
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
