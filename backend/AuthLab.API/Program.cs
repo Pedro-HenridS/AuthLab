@@ -23,6 +23,14 @@ builder.Services.AddDbContext<AppDbContext>(options =>
     .EnableSensitiveDataLogging()
     .EnableDetailedErrors());
 
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend",
+        policy => policy
+            .WithOrigins("http://localhost:5173") 
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+});
 
 builder.Services.AddScoped<IUserRegisterRepository, UserRegisterRepository>();    
 builder.Services.AddScoped<IUserFindByEmailRepository, FindByEmailRepository>();
@@ -47,6 +55,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
+app.UseCors("AllowFrontend");
 
 app.UseAuthorization();
 
