@@ -24,11 +24,10 @@ namespace API.Controllers
             {
                 var result = await _registerUserUseCase.CreateUser(request);
 
-                return Created(string.Empty, result); // Ou use Ok(result) se preferir
+                return Created(string.Empty, result); 
             }
             catch 
             {
-                // Logar o erro seria melhor para debug
                 return BadRequest("");
             }
         }
