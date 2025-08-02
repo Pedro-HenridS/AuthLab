@@ -5,15 +5,16 @@
     width: 97vw;
 }
 
-.form{
+.whiteContainer{
     width: 30rem;
     height: 100vh;
+    background-color: #f4f4f4;
     display:flex;
     flex-direction: column;
-    background-color: #f4f4f4;
-    align-items: center;
-    justify-content:center;
+    justify-content: center;
 }
+
+
 
 .Title{
     color: black;
@@ -21,11 +22,16 @@
 
 .InputComponent{
     width: 14rem;
+    margin-top: 1rem;
 }
 
 .PasswordInput{
     width: 14rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
+}
+
+.userNameInput{
+    width: 14rem;
 }
 
 .image_section{
@@ -38,3 +44,8 @@
     height: 100%;
     object-fit: cover;
 }
+
+.submit_button{
+    margin-top: 1rem;
+}
+
