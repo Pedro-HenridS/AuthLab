@@ -6,9 +6,9 @@ namespace AuthLab.Application.Services.Account
 {
     public class PasswordHasherService
     {
-        private IPasswordHashService _passwordHashService;
+        private ISearchUser _passwordHashService;
 
-        public PasswordHasherService(IPasswordHashService passwordHashService)
+        public PasswordHasherService(ISearchUser passwordHashService)
         {
             _passwordHashService = passwordHashService;
         }

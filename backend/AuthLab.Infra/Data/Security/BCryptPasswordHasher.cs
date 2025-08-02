@@ -2,7 +2,7 @@
 
 namespace AuthLab.Infra.Data.Security
 {
-    public class BCryptPasswordHasher : IPasswordHashService
+    public class BCryptPasswordHasher : ISearchUser
     {
         public string PasswordHasher(string password) 
         { 

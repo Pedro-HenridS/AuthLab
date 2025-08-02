@@ -1,0 +1,40 @@
+.page{
+    display: flex;
+    flex-direction: row;
+    max-height: 97vh;
+    width: 97vw;
+}
+
+.form{
+    width: 30rem;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    background-color: #f4f4f4;
+    align-items: center;
+    justify-content:center;
+}
+
+.Title{
+    color: black;
+}
+
+.InputComponent{
+    width: 14rem;
+}
+
+.PasswordInput{
+    width: 14rem;
+    margin-top: 2rem;
+}
+
+.image_section{
+    width: 100%;
+    height: 100vh;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
