@@ -1,14 +1,12 @@
-﻿
+﻿using Domain.Interfaces.Users;
 
-using AuthLab.Domain.Interfaces.Users;
-
-namespace AuthLab.Application.Services.Account
+namespace Application.Services.Account
 {
     public class PasswordHasherService
     {
-        private ISearchUser _passwordHashService;
+        private IPasswordHasher _passwordHashService;
 
-        public PasswordHasherService(ISearchUser passwordHashService)
+        public PasswordHasherService(IPasswordHasher passwordHashService)
         {
             _passwordHashService = passwordHashService;
         }

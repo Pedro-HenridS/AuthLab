@@ -1,8 +1,8 @@
 ﻿
-using AuthLab.Domain.Interfaces.Users;
+using Domain.Interfaces.Users;
 using Microsoft.EntityFrameworkCore;
 
-namespace AuthLab.Infra.Data.Repositories
+namespace Infra.Data.Repositories
 {
     public class FindByEmailRepository : IUserFindByEmailRepository
     {

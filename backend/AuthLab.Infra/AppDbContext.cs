@@ -1,7 +1,7 @@
-﻿using AuthLab.Domain.Repositories;
+﻿using Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
 
-namespace AuthLab.Infra
+namespace Infra
 {
     public class AppDbContext : DbContext
     {

@@ -1,8 +1,8 @@
-﻿using AuthLab.Domain.Interfaces.Users;
+﻿using Domain.Interfaces.Users;
 
-namespace AuthLab.Infra.Data.Security
+namespace Infra.Data.Security
 {
-    public class BCryptPasswordHasher : ISearchUser
+    public class BCryptPasswordHasher : IPasswordHasher
     {
         public string PasswordHasher(string password) 
         { 

@@ -1,4 +1,4 @@
-﻿namespace AuthLab.Domain.Repositories
+﻿namespace Domain.Repositories
 {
     public class User
     {

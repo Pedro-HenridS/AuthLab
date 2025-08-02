@@ -5,19 +5,19 @@ VisualStudioVersion = 17.14.36301.6
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "backend", "backend", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthLab.API", "backend\AuthLab.API\AuthLab.API.csproj", "{EF501E34-8F35-4DAF-B08A-E1EC089C13E4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "backend\AuthLab.API\API.csproj", "{EF501E34-8F35-4DAF-B08A-E1EC089C13E4}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "frontend", "frontend", "{CF460272-D3F6-4DAD-80AB-8BEE19B1364A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthLab.Application", "backend\AuthLab.Application\AuthLab.Application.csproj", "{09E63D87-4007-4E2C-BC59-BE10E8411349}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Application", "backend\AuthLab.Application\Application.csproj", "{09E63D87-4007-4E2C-BC59-BE10E8411349}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthLab.Exception", "backend\AuthLab.Exception\AuthLab.Exception.csproj", "{FF3D76F5-3674-4A74-AF53-97C0336757E1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exception", "backend\AuthLab.Exception\Exception.csproj", "{FF3D76F5-3674-4A74-AF53-97C0336757E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthLab.Communication", "backend\AuthLab.Communication\AuthLab.Communication.csproj", "{84DEB4AF-7253-4D82-B015-490C5D7CA302}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Communication", "backend\AuthLab.Communication\Communication.csproj", "{84DEB4AF-7253-4D82-B015-490C5D7CA302}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthLab.Domain", "backend\AuthLab.Domain\AuthLab.Domain.csproj", "{E34F1DA0-A9DB-433C-9969-EDE638E9C783}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domain", "backend\AuthLab.Domain\Domain.csproj", "{E34F1DA0-A9DB-433C-9969-EDE638E9C783}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthLab.Infra", "backend\AuthLab.Infra\AuthLab.Infra.csproj", "{E14383EF-384F-46CA-9D9B-94209ECB5AD0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Infra", "backend\AuthLab.Infra\Infra.csproj", "{E14383EF-384F-46CA-9D9B-94209ECB5AD0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

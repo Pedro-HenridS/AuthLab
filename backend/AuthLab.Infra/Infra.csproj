@@ -21,7 +21,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AuthLab.Domain\AuthLab.Domain.csproj" />
+    <ProjectReference Include="..\AuthLab.Domain\Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

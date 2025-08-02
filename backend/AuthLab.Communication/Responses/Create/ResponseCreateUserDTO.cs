@@ -1,5 +1,5 @@
 ﻿
-namespace AuthLab.Communication.Responses.Create
+namespace Communication.Responses.Create
 {
     public class ResponseCreateUserDTO
     {

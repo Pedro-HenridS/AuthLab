@@ -1,13 +1,13 @@
 ﻿
 
-using Authlab.Exception;
-using AuthLab.Application.Services.Account;
-using AuthLab.Communication.Requests.DTO.Users;
-using AuthLab.Communication.Requests.Validator;
-using AuthLab.Communication.Responses.Create;
-using AuthLab.Domain.Repositories;
+using Exception;
+using Application.Services.Account;
+using Communication.Requests.DTO.Users;
+using Communication.Requests.Validator;
+using Communication.Responses.Create;
+using Domain.Repositories;
 
-namespace AuthLab.Application.UseCases
+namespace Application.UseCases
 {   
     public class RegisterUserUseCase
     {

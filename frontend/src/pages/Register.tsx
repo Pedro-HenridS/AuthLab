@@ -6,7 +6,7 @@ import styles from "./Register.module.css";
 export function Register(){
     return (
     <div className={styles.page}>
-        <form className={ styles.form }>
+        <form className={ styles.form } onSubmit={handleSubmit}>
             <h1 className={styles.Title} >Criar conta</h1>
             <label className={styles.InputComponent}>
                 <InputComponent  placeholder="Insira seu email"/>
@@ -14,6 +14,7 @@ export function Register(){
             <label className={styles.PasswordInput}>
                 <PasswordInput/>
             </label>
+            <button type="submit">Cadastrar</button>
         </form>
 
         <section className={styles.image_section}>

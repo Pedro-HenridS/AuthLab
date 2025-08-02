@@ -1,7 +1,7 @@
 ﻿
-using AuthLab.Exception;
+using Exception;
 
-namespace Authlab.Exception
+namespace Exception
 {
     public class ErrorOnValidationException : AuthLabException
     {

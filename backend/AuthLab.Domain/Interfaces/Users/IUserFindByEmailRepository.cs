@@ -1,7 +1,7 @@
 ﻿
 using Microsoft.AspNetCore.Mvc;
 
-namespace AuthLab.Domain.Interfaces.Users
+namespace Domain.Interfaces.Users
 {
     public interface IUserFindByEmailRepository
     {

@@ -1,8 +1,8 @@
-﻿using AuthLab.Domain.Interfaces.Users;
-using AuthLab.Domain.Repositories;
+﻿using Domain.Interfaces.Users;
+using Domain.Repositories;
 
 
-namespace AuthLab.Infra.Data.Repositories
+namespace Infra.Data.Repositories
 {
     public class UserRegisterRepository : IUserRegisterRepository
     {

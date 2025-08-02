@@ -1,6 +1,6 @@
 ﻿
 
-namespace AuthLab.Domain.Interfaces.Users
+namespace Domain.Interfaces.Users
 {
     public interface ISearchUser
     {

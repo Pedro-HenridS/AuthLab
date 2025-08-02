@@ -1,5 +1,5 @@
 ﻿
-namespace AuthLab.Exception
+namespace Exception
 {
     public class AuthLabException : SystemException
     {

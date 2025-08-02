@@ -13,13 +13,15 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.3" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AuthLab.Application\AuthLab.Application.csproj" />
-    <ProjectReference Include="..\AuthLab.Communication\AuthLab.Communication.csproj" />
-    <ProjectReference Include="..\AuthLab.Exception\AuthLab.Exception.csproj" />
+    <ProjectReference Include="..\AuthLab.Application\Application.csproj" />
+    <ProjectReference Include="..\AuthLab.Communication\Communication.csproj" />
+    <ProjectReference Include="..\AuthLab.Exception\Exception.csproj" />
+    <ProjectReference Include="..\AuthLab.Infra\Infra.csproj" />
   </ItemGroup>
 
 </Project>

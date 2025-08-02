@@ -1,9 +1,9 @@
 ﻿
 
-using AuthLab.Domain.Interfaces.Users;
-using AuthLab.Domain.Repositories;
+using Domain.Interfaces.Users;
+using Domain.Repositories;
 
-namespace AuthLab.Application.Services.Account
+namespace Application.Services.Account
 {
     public class CreateUserService 
     {

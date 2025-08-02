@@ -1,9 +1,9 @@
-﻿using AuthLab.Application.UseCases;
-using AuthLab.Communication.Requests.DTO.Users;
-using AuthLab.Communication.Responses.Create;
+﻿using Application.UseCases;
+using Communication.Requests.DTO.Users;
+using Communication.Responses.Create;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AuthLab.API.Controllers
+namespace API.Controllers
 {
     [Route("[controller]")]
     [ApiController]

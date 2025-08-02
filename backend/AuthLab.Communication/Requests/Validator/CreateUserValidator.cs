@@ -1,7 +1,7 @@
-﻿using AuthLab.Communication.Requests.DTO.Users;
+﻿using Communication.Requests.DTO.Users;
 using FluentValidation;
 
-namespace AuthLab.Communication.Requests.Validator
+namespace Communication.Requests.Validator
 {
     public class CreateUserValidator : AbstractValidator<CreateUserDTO>
     {

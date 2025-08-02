@@ -1,10 +1,9 @@
-﻿using Authlab.Exception;
-using AuthLab.Communication.Responses.Errors;
-using AuthLab.Exception;
+﻿using Exception;
+using Communication.Responses.Errors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace AuthLab.API.Filters
+namespace API.Filters
 {
     public class ExceptionsFilter : IExceptionFilter
     {

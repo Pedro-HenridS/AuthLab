@@ -1,8 +1,8 @@
 ﻿
 
-using AuthLab.Domain.Interfaces.Users;
+using Domain.Interfaces.Users;
 
-namespace AuthLab.Application.Services.Account
+namespace Application.Services.Account
 {
     public class FindByEmailService
     {

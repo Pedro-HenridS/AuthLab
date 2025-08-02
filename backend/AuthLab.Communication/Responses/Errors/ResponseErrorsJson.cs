@@ -1,6 +1,6 @@
 ﻿
 
-namespace AuthLab.Communication.Responses.Errors
+namespace Communication.Responses.Errors
 {
     public class ResponseErrorsJson
     {

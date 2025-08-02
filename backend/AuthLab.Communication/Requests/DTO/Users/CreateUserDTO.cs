@@ -1,5 +1,5 @@
 ﻿
-namespace AuthLab.Communication.Requests.DTO.Users
+namespace Communication.Requests.DTO.Users
 {
     public class CreateUserDTO
     {

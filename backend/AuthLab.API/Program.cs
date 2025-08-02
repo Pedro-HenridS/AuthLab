@@ -1,17 +1,16 @@
 
-using AuthLab.Application.Services.Account;
-using AuthLab.Application.UseCases;
-using AuthLab.Communication.Requests.Validator;
-using AuthLab.Domain.Interfaces.Users;
-using AuthLab.Infra;
-using AuthLab.Infra.Data.Repositories;
-using AuthLab.Infra.Data.Security;
+using Application.Services.Account;
+using Application.UseCases;
+using Communication.Requests.Validator;
+using Domain.Interfaces.Users;
+using Infra;
+using Infra.Data.Repositories;
+using Infra.Data.Security;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -22,11 +21,12 @@ var connectionString = builder.Configuration.GetConnectionString("DefaultConnect
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString))
     .EnableSensitiveDataLogging()
-    .EnableDetailedErrors()); 
+    .EnableDetailedErrors());
+
 
 builder.Services.AddScoped<IUserRegisterRepository, UserRegisterRepository>();    
 builder.Services.AddScoped<IUserFindByEmailRepository, FindByEmailRepository>();
-builder.Services.AddScoped<IPasswordHashService, BCryptPasswordHasher>();
+builder.Services.AddScoped<IPasswordHasher, BCryptPasswordHasher>();
 
 builder.Services.AddScoped<CreateUserService>();
 builder.Services.AddScoped<FindByEmailService>();
