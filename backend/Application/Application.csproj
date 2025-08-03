@@ -7,9 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AuthLab.Communication\Communication.csproj" />
-    <ProjectReference Include="..\AuthLab.Domain\Domain.csproj" />
-    <ProjectReference Include="..\AuthLab.Exception\Exception.csproj" />
+    <ProjectReference Include="..\Communication\Communication.csproj" />
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+    <ProjectReference Include="..\Exception\Exception.csproj" />
   </ItemGroup>
 
 </Project>

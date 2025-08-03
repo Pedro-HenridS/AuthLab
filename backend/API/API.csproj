@@ -18,10 +18,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AuthLab.Application\Application.csproj" />
-    <ProjectReference Include="..\AuthLab.Communication\Communication.csproj" />
-    <ProjectReference Include="..\AuthLab.Exception\Exception.csproj" />
-    <ProjectReference Include="..\AuthLab.Infra\Infra.csproj" />
+    <ProjectReference Include="..\Application\Application.csproj" />
+    <ProjectReference Include="..\Communication\Communication.csproj" />
+    <ProjectReference Include="..\Exception\Exception.csproj" />
+    <ProjectReference Include="..\Infra\Infra.csproj" />
   </ItemGroup>
 
 </Project>
