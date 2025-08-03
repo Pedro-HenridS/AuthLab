@@ -2,6 +2,7 @@
 using Communication.Responses.Errors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using System.ComponentModel.DataAnnotations;
 
 namespace API.Filters
 {
@@ -21,10 +22,10 @@ namespace API.Filters
 
         private void HandleException(ExceptionContext context) 
         {
-            if(context.Exception is ErrorOnValidationException)
+            if(context.Exception is ErrorOnValidationException validationException)
             {
 
-                var errorResponse = new ResponseErrorsJson ("");
+                var errorResponse = new ResponseErrorsJson (validationException.Errors);
 
                 context.HttpContext.Response.StatusCode = StatusCodes.Status400BadRequest;
                 context.Result = new ObjectResult(errorResponse);

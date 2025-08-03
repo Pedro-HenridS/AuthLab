@@ -20,16 +20,9 @@ namespace API.Controllers
         [Route("register")]
         public async Task<IActionResult> AccountRegister([FromBody] CreateUserDTO request)
         {
-            try
-            {
-                var result = await _registerUserUseCase.CreateUser(request);
+            var result = await _registerUserUseCase.CreateUser(request);
 
-                return Created(string.Empty, result); 
-            }
-            catch 
-            {
-                return BadRequest("");
-            }
+            return Created(string.Empty, result); 
         }
     }
 }

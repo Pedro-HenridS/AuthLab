@@ -1,4 +1,5 @@
 
+using API.Filters;
 using Application.Services.Account;
 using Application.UseCases;
 using Communication.Requests.Validator;
@@ -10,7 +11,10 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddControllers();
+builder.Services.AddControllers(options =>
+{
+    options.Filters.Add<ExceptionsFilter>();
+});
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
