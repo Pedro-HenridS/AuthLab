@@ -8,7 +8,6 @@
 .vs/
 appsettings.Development.json
 appsettings.json
-Dockerfile
 
 # User-specific files
 *.rsuser
