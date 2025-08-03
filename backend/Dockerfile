@@ -1,14 +1,17 @@
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+FROM mcr.microsoft.com/dotnet/sdk:9.0.302 AS build-env
 WORKDIR /app
-EXPOSE 80
 
-FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
-WORKDIR /src
 COPY . .
-RUN dotnet restore AuthLab.sln
-RUN dotnet publish AuthLab.sln -c Release -o /app/publish
 
-FROM base AS final
+WORKDIR /app/API
+
+RUN dotnet restore
+
+RUN dotnet publish -c Release -o /app/out
+
+FROM mcr.microsoft.com/dotnet/aspnet:8.0
 WORKDIR /app
-COPY --from=build /app/publish .
-ENTRYPOINT ["dotnet", "AuthLab.API.dll"]
+
+COPY --from=build-env /app/out .
+
+ENTRYPOINT ["dotnet", "API.dll"]

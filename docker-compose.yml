@@ -11,21 +11,24 @@ services:
       MYSQL_USER: user
       MYSQL_PASSWORD: userpassword
     ports:
-      - "3306:3306"
+      - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
     networks:
       - app-network
 
   backend:
-    build: ./backend
+    build: 
+      context: .
+      dockerfile: ./backend/API/Dockerfile
     container_name: backend
     ports:
-      - "5000:80"
+      - "7063:7063" 
     depends_on:
       - mysql
     environment:
-      - ConnectionStrings__DefaultConnection=server=mysql;port=3306;database=authlab;user=user;password=userpassword;
+      - ASPNETCORE_URLS=http://+:7063
+      - ConnectionStrings__DefaultConnection=server=mysql;port=3306;database=authlabdb;user=root;password=Pks10@2166;
     networks:
       - app-network
 
@@ -33,7 +36,7 @@ services:
     build: ./frontend
     container_name: frontend
     ports:
-      - "3000:80"
+      - "5173:5173"  
     depends_on:
       - backend
     networks:
