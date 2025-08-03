@@ -20,7 +20,7 @@ export function CadastroForm(){
         try{
             event.preventDefault()
             console.log("Dados enviados", formData)
-            const response = await axios.post('https://localhost:7063/Account/register', formData)
+            const response = await axios.post('http://localhost:5000/Account/register', formData)
             console.log(response.data)
         }catch(err){
             console.log(formData)
