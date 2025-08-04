@@ -5,7 +5,7 @@ using Application.Services.Account;
 using Communication.Requests.DTO.Users;
 using Communication.Requests.Validator;
 using Communication.Responses.Create;
-using Domain.Repositories;
+using Domain.Entities;
 
 namespace Application.UseCases
 {   

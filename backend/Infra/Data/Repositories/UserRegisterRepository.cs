@@ -1,5 +1,5 @@
 ﻿using Domain.Interfaces.Users;
-using Domain.Repositories;
+using Domain.Entities;
 
 
 namespace Infra.Data.Repositories

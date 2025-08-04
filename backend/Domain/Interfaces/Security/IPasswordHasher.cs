@@ -1,6 +1,4 @@
-﻿
-
-namespace Domain.Interfaces.Users
+﻿namespace Domain.Interfaces.Security
 {
     public interface IPasswordHasher
     {

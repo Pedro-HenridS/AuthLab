@@ -2,15 +2,15 @@
 
 namespace Exception
 {
-    public class ErrorOnValidationException : AuthLabException
+    public class ErrorOnLLogin : AuthLabException
     {
         public List<string> Errors { get; set; } = [];
 
-        public ErrorOnValidationException(string errors)
+        public ErrorOnLLogin(string errors)
         {
             Errors = [errors];
         }
-        public ErrorOnValidationException(List<string> errors)
+        public ErrorOnLLogin(List<string> errors)
         {
             Errors = errors;
         }

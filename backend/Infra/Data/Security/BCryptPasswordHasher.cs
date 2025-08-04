@@ -1,4 +1,4 @@
-﻿using Domain.Interfaces.Users;
+﻿using Domain.Interfaces.Security;
 
 namespace Infra.Data.Security
 {

@@ -7,13 +7,17 @@ namespace API.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-    public class Account : ControllerBase
+    public class AccountController : ControllerBase
     {
         private readonly RegisterUserUseCase _registerUserUseCase;
+        private readonly LoginUserUseCase _loginUserUseCase;
 
-        public Account(RegisterUserUseCase registerUserUseCase)
+        public AccountController(
+            RegisterUserUseCase registerUserUseCase,
+            LoginUserUseCase loginUserUseCase)
         {
             _registerUserUseCase = registerUserUseCase;
+            _loginUserUseCase = loginUserUseCase;
         }
 
         [HttpPost]
@@ -23,6 +27,16 @@ namespace API.Controllers
             var result = await _registerUserUseCase.CreateUser(request);
 
             return Created(string.Empty, result); 
+        }
+
+        [HttpPost]
+        [Route("login")]
+
+        public async Task<IActionResult> UserLogin([FromBody] UserLoginDTO request)
+        {
+            var result = await _loginUserUseCase.LoginUser(request);
+
+            return Created(string.Empty, result);
         }
     }
 }

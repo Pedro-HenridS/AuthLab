@@ -1,7 +1,7 @@
 ﻿
 
 using Domain.Interfaces.Users;
-using Domain.Repositories;
+using Domain.Entities;
 
 namespace Application.Services.Account
 {
